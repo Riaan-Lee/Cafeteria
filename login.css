@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Layout */
+body, html {
+    height: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Main Container */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Section: Background Image */
+.left-section {
+    flex: 1;
+    background-image: url("Home page photo.jpg"); /* Updated to relative path */
+    background-size: cover;
+    background-position: center; /* Ensure proper centering */
+    background-repeat: no-repeat;
+}
+
+/* Right Section: Login Form */
+.right-section {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.right-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0056b3; /* Strathmore Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003f8a;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+p a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

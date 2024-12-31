@@ -1,0 +1,162 @@
+/* ============================ Navigation Bar Styling ============================ */
+#navigation {
+    list-style-type: none;
+    background-color: #1D3557; /* Strathmore Blue */
+    padding: 20px 30px;
+    overflow: hidden;
+    position: flex; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+    color: #1D3557; /* Strathmore Blue */
+    background-color: #f0c75e; /* Strathmore Gold */
+}
+
+.active {
+    background-color: #D50000; /* Strathmore Red */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* ============================ General Page Styling ============================ */
+body {
+    font-family: 'Sansation', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding-top: 100px; /* Space for fixed navbar */
+}
+
+/* ============================ Form Container Styling ============================ */
+#loginform #registrationform{
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* ============================ Title Styling ============================ */
+h1 {
+    font-family: 'Sansation', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px auto;
+}
+
+form {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1D3557; /* Strathmore Blue */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+input:focus, select:focus {
+    border-color: #D4AF37; /* Strathmore Gold */
+    outline: none;
+}
+
+/* Submit Button Styling */
+[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #1D3557; /* Strathmore Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+[type="submit"]:hover {
+    background-color: #f0c75e; /* Strathmore Gold */
+    color: #1D3557;
+}
+
+/* ============================ Form Messages Styling ============================ */
+.form-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #D50000; /* Strathmore Red */
+    font-weight: bold;
+}
+
+/* ============================ Page Background Styling ============================
+body {
+    font-family: 'Sansation', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 80px; /* Space for navbar */
+
+
+/* ============================ Validation Error Styles ============================ */
+#result, #result1 {
+    text-align: center;
+    font-size: 1em;
+    color: #D50000; /* Strathmore Red */
+}
+
+/* ============================ Responsive Design ============================ */
+@media (max-width: 768px) {
+    #loginform, #registrationform {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label, input, select {
+        font-size: 1em;
+    }
+}

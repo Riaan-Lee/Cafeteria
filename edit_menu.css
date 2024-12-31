@@ -1,0 +1,326 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* ============================ Navigation Bar Styling ============================ */
+#navigation {
+    list-style-type: none;
+    background-color: #1D3557; /* Strathmore Blue */
+    padding: 20px 30px;
+    margin: 0;
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between left and right groups */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+#navigation li {
+    display: inline;
+}
+
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navigation li a:hover {
+    background-color: #f0c75e; /* Strathmore Gold */
+    color: #1D3557;
+}
+
+#navigation li a.active {
+    background-color: #D50000; /* Strathmore Red */
+}
+
+/* Title and Section Styling */
+h1 {
+    text-align: center;
+    color: #1D3557;
+    margin-top: 80px; /* Offset for fixed navbar */
+    font-size: 2.5em;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #f0c75e;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+/* Main Container Styling */
+.menu-container, .order-container, .menu-form {
+    max-width: 1400px; /* Increased size */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.menu-form h2, .order-container h2 {
+    font-size: 1.8em;
+    color: #1D3557;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D50000; /* Strathmore Red */
+    padding-bottom: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+thead {
+    background-color: #1D3557; /* Strathmore Blue */
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #D4AF37; /* Strathmore Gold */
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f0c75e;
+    color: #1D3557;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.delete-btn {
+    background-color: #D50000; /* Strathmore Red */
+}
+
+.delete-btn:hover {
+    background-color: #FF4D4D; /* Brighter red */
+}
+
+/* Form Inputs */
+input[type="text"], input[type="url"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="url"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+    border-color: #D4AF37; /* Strathmore Gold */
+    box-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
+    outline: none;
+}
+
+/* Textarea Specific Styling */
+textarea {
+    min-height: 100px;
+    resize: vertical; /* Allow resizing only vertically */
+}
+
+/* Enhanced Form Buttons */
+.menu-form button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #1D3557; /* Strathmore Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-form button[type="submit"]:hover {
+    background-color: #f0c75e;
+    color: #1D3557;
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* Additional Styling for Table Actions */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons .btn {
+    flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container, .order-container, .menu-form {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    input[type="text"], input[type="url"], input[type="number"], textarea, select {
+        font-size: 0.9em;
+    }
+}
+.menu-container h2 {
+    font-size: 1.8em;
+    color: #1D3557;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D50000;
+    padding-bottom: 10px;
+}
+
+.menu-container p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #1D3557;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+/* Search and Filter Container */
+.search-filter-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-filter-container input[type="text"], 
+.search-filter-container select {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.search-filter-container button {
+    padding: 10px 20px;
+    background-color: #D4AF37; /* Strathmore Gold */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-filter-container button:hover {
+    background-color: #f0c75e;
+    color: #1D3557;
+}
+/* Orders Table Enhancements */
+.menu-container table {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.menu-container th {
+    background-color: #1D3557; /* Strathmore Blue */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-container td {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.menu-container td:last-child {
+    text-align: center;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0; /* Subtle gray highlight */
+}
+
+.menu-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #1D3557;
+    font-weight: bold;
+}
+

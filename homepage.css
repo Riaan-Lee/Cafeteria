@@ -1,0 +1,195 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+#navigation {
+    list-style-type: none;
+    background-color: #1D3557; /* Strathmore Blue */
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navigation .left, #navigation .right {
+    display: flex;
+    gap: 15px;
+}
+
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#navigation li a:hover {
+    background-color: #f0c75e; /* Strathmore Gold */
+}
+
+#navigation .active {
+    background-color: #D50000; /* Strathmore Red */
+}
+
+/* Welcome Banner Styling */
+#welcome-banner {
+    background-color: #1D3557; /* Strathmore Blue */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#welcome-banner h1 {
+    font-size: 3em;
+}
+
+#welcome-banner p {
+    font-size: 1.5em;
+}
+
+#welcome-banner .btn {
+    background-color: #f0c75e; /* Strathmore Gold */
+    padding: 15px 30px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#welcome-banner .btn:hover {
+    background-color: #D50000; /* Strathmore Red */
+    color: white;
+}
+
+/* Image Gallery Styling */
+#image-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 50px 20px;
+}
+
+#image-gallery .gallery-item {
+    flex: 1;
+    text-align: center;
+}
+
+#image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image-gallery p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 2em;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Meet the Staff Section */
+#meet-the-staff {
+    background-color: #f0f75e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#meet-the-staff h2 {
+    font-size: 2em;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+
+#meet-the-staff p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #1D3557;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#cta .btn {
+    background-color: #f0c75e;
+    padding: 15px 30px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#cta .btn:hover {
+    background-color: #D50000; /* Strathmore Red */
+    color: white;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #image-gallery {
+        flex-direction: column;
+    }
+
+    #image-gallery .gallery-item {
+        margin-bottom: 30px;
+    }
+}

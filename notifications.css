@@ -1,0 +1,126 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+#navigation {
+    list-style-type: none;
+    background-color: #1D3557; /* Strathmore Blue */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navigation li {
+    display: inline;
+}
+
+#navigation li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#navigation li a:hover {
+    background-color: #f0c75e; /* Strathmore Gold */
+    color: #1D3557;
+}
+
+#navigation li a.active {
+    background-color: #D50000; /* Strathmore Red */
+}
+
+/* Notifications Container */
+.notifications-container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.notification {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.notification.unread {
+    border-left: 4px solid #D50000; /* Highlight unread notifications */
+}
+
+.notification p {
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.notification .timestamp {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #D4AF37; /* Strathmore Gold */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0c75e;
+    color: #1D3557;
+}
+/* Notifications Container */
+.notifications-container {
+    padding: 20px;
+}
+
+.notification {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.notification.unread {
+    background-color: #f0f8ff; /* Light blue for unread */
+}
+
+.notification.read {
+    background-color: #d3ffd3; /* Light green for read */
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #999;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #f0c75e;
+}
